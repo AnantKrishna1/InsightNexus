@@ -1,5 +1,5 @@
 # ============================================================
-# 🚀 InsightNexus Backend (Main FastAPI App)
+#  InsightNexus Backend (Main FastAPI App)
 # ============================================================
 
 from fastapi import FastAPI
@@ -8,12 +8,12 @@ from dotenv import load_dotenv
 import os
 
 # ============================================================
-# 🧩 Load Environment Variables
+#  Load Environment Variables
 # ============================================================
 load_dotenv()
 
 # ============================================================
-# 🌐 FastAPI App Initialization
+#  FastAPI App Initialization
 # ============================================================
 app = FastAPI(
     title="InsightNexus Backend API",
@@ -22,7 +22,7 @@ app = FastAPI(
 )
 
 # ============================================================
-# 🌍 CORS Configuration
+#  CORS Configuration
 # ============================================================
 app.add_middleware(
     CORSMiddleware,
@@ -33,7 +33,7 @@ app.add_middleware(
 )
 
 # ============================================================
-# 🔗 Import and Include Routers
+#  Import and Include Routers
 # ============================================================
 from backend.app.routes import api_routes, eda_routes  # ✅ Added eda_routes for Phase 4
 
@@ -42,7 +42,7 @@ app.include_router(api_routes.router, prefix="/api", tags=["CSV & API"])
 app.include_router(eda_routes.router, prefix="/eda", tags=["EDA & Analysis"])
 
 # ============================================================
-# 🏠 Root Endpoint
+#  Root Endpoint
 # ============================================================
 @app.get("/")
 def root():
@@ -53,14 +53,14 @@ def root():
     }
 
 # ============================================================
-# ⚙️ Health Check Endpoint
+#  Health Check Endpoint
 # ============================================================
 @app.get("/health")
 def health_check():
     return {"status": "✅ Server healthy and ready for EDA operations"}
 
 # ============================================================
-# ▶️ Run (for local testing)
+#  Run (for local testing)
 # ============================================================
 # Run from project root using:
 #   uvicorn backend.app.main:app --reload
