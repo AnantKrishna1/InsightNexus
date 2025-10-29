@@ -1,4 +1,4 @@
-# 🚀 InsightNexus – Full-Stack AI-Powered Data Insights Platform
+# InsightNexus – Full-Stack AI-Powered Data Insights Platform
 
 InsightNexus is an **end-to-end Full Stack AI Developer project** that lets users upload datasets and instantly get **automated Exploratory Data Analysis (EDA)** along with **AI-generated insights** — all through a clean **Streamlit frontend** and **FastAPI backend**.
 
@@ -12,7 +12,7 @@ Rather than a random aggregation of technologies, this project demonstrates a co
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -25,7 +25,7 @@ Rather than a random aggregation of technologies, this project demonstrates a co
 
 ---
 
-## ⚙️ Features
+## Features
 
 ✅ Upload CSV files for instant EDA  
 ✅ AI-powered natural-language insights  
@@ -36,7 +36,7 @@ Rather than a random aggregation of technologies, this project demonstrates a co
 
 ---
 
-## 🗂️ Folder Structure
+## Folder Structure
 
 InsightNexus/
 │
@@ -55,7 +55,7 @@ InsightNexus/
 
 ---
 
-## 💻 Run Locally
+## Run Locally
 
 ### 1 Clone the repo
 ```bash
